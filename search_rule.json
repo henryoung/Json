@@ -1,0 +1,18 @@
+{
+  "COMMENT_SEARCH_NODE_NMAE" : "only one & can be empty",
+  "SEARCH_NODE_NAME" : "ORDER_PARTNERS_OUT",
+  "COMMENT_MATCH_RULE" : "match rule can be empty or multi",
+  "MATCH_RULE" : {
+    "SD_DOC" : "0000000151",
+    "PARTN_ROLE" : "AG"
+    },
+  "COMMENT_COUNT_RULE" : "use this rule to count specified element",
+  "COUNT_RULE_KEY" : "SD_DOC",
+  "COUNT_RULE_VALUE" : "0000000151",
+  "COMMENT_ACTION_RULE" : "change node Property, will apply to matched nodes",
+  "ACTION_RULE" : {
+     "LEVEL_NR" : "100",
+     "COMMENT_OUT_FILE" : "output parsed json data to out file",
+     "OUT_FILE" : "parsed.json"
+     }
+}
