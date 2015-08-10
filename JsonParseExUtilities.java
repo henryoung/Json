@@ -3,6 +3,7 @@ package jsonparseutil;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.Writer;
+import java.math.BigDecimal;
 import java.util.AbstractMap;
 import java.util.ArrayList;
 
@@ -160,9 +161,21 @@ public final class JsonParseExUtilities {
 			JsonObject obj = gson.fromJson(reader, JsonObject.class);
 			gson.toJson(obj, writer);
 			break;
-		case NAME:
-			String name = reader.nextName();
-			writer.name(name);
+		case STRING:
+			String s = reader.nextString();
+			writer.value(s);
+			break;
+		case NUMBER:
+			String n = reader.nextString();
+			writer.value(new BigDecimal(n));
+			break;
+		case BOOLEAN:
+			boolean b = reader.nextBoolean();
+			writer.value(b);
+			break;
+		case NULL:
+			reader.nextNull();
+			writer.nullValue();
 			break;
 		default:
 			reader.skipValue();
