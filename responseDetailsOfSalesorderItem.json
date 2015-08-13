@@ -1,5 +1,4 @@
 {
-  "OPERATION" : "005",
   "EXTENSIONOUT" : [ ],
   "ORDER_ADDRESS_OUT" : [ {
     "OPERATION" : "005",
@@ -6013,20 +6012,7 @@
     "TAXLAWCOFINS" : "",
     "TAXLAWPIS" : ""
   } ],
-  "ORDER_PARTNERS_OUT" : [ 
-  {"SD_DOC" : "0000000151",
-  "PARTN_ROLE" : "AG",
-  "CONTACT" : 555
-  },
-  [{"SD_DOC" : "0000000151",
-  "PARTN_ROLE" : "AG",
-  "CONTACT" : 666},
-  [{"SD_DOC" : "0000000151",
-  "SD_DOC" : "0000000151",
-  "PARTN_ROLE" : "AG",
-  "CONTACT" : 777}]],
-  
-  {
+  "ORDER_PARTNERS_OUT" : [ {
     "OPERATION" : "005",
     "SD_DOC" : "0000000151",
     "ITM_NUMBER" : 0,

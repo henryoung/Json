@@ -181,6 +181,7 @@ public final class JsonParseExUtilities {
 			reader.skipValue();
 			break;
 		}
+		writer.flush();
 	}
 
 }
